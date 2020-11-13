@@ -1,0 +1,37 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Carga el estilo DeAbajoHaciaArriba.
+    Se debe tener como Theme definido en el manifest de la actividad a abrir y heredar de un estilo que herede de Teme.AppCompat o de AppTheme-->
+    <style name="AnimacionAbajoArriba" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/DeAbajoHaciaArriba</item>
+    </style>
+
+    <!-- Carga las aniaciones par abrir hacia arriba una activity-->
+    <style name="DeAbajoHaciaArriba" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/entra_hacia_abajo</item>
+        <item name="android:activityOpenExitAnimation">@anim/sale_hacia_arriba</item>
+        <item name="android:activityCloseEnterAnimation">@anim/entra_hacia_arriba</item>
+        <item name="android:activityCloseExitAnimation">@anim/sale_hacia_abajo</item>
+    </style>
+
+    <!-- Carga el estilo DeArribaHaciaAbajo.
+    Se debe tener como Theme definido en el manifest de la actividad a abrir y heredar de un estilo que herede de Teme.AppCompat o de AppTheme-->
+    <style name="AnimacionArribaAbajo" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/DeArribaHaciaAbajo</item>
+    </style>
+
+    <!-- Carga las animaciones para abrir hacia abajo una activity-->
+    <style name="DeArribaHaciaAbajo" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/sale_hacia_abajo</item>
+        <item name="android:activityOpenExitAnimation">@anim/entra_hacia_arriba</item>
+        <item name="android:activityCloseEnterAnimation">@anim/sale_hacia_arriba</item>
+        <item name="android:activityCloseExitAnimation">@anim/entra_hacia_abajo</item>
+    </style>
+
+</resources>

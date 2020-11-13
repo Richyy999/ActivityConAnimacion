@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityConAnimacion</string>
+    <string name="activity_abajo">Activity Abajo</string>
+    <string name="activity_arriba">Activity Arriba</string>
+</resources>
