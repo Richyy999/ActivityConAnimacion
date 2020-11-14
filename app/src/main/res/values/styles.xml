@@ -15,9 +15,9 @@
     <!-- Carga las aniaciones par abrir hacia arriba una activity-->
     <style name="DeAbajoHaciaArriba" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/entra_hacia_abajo</item>
-        <item name="android:activityOpenExitAnimation">@anim/sale_hacia_arriba</item>
+        <item name="android:activityOpenExitAnimation">@anim/sale_hacia_abajo</item>
         <item name="android:activityCloseEnterAnimation">@anim/entra_hacia_arriba</item>
-        <item name="android:activityCloseExitAnimation">@anim/sale_hacia_abajo</item>
+        <item name="android:activityCloseExitAnimation">@anim/sale_hacia_arriba</item>
     </style>
 
     <!-- Carga el estilo DeArribaHaciaAbajo.
@@ -28,10 +28,38 @@
 
     <!-- Carga las animaciones para abrir hacia abajo una activity-->
     <style name="DeArribaHaciaAbajo" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/sale_hacia_abajo</item>
-        <item name="android:activityOpenExitAnimation">@anim/entra_hacia_arriba</item>
-        <item name="android:activityCloseEnterAnimation">@anim/sale_hacia_arriba</item>
-        <item name="android:activityCloseExitAnimation">@anim/entra_hacia_abajo</item>
+        <item name="android:activityOpenEnterAnimation">@anim/entra_hacia_arriba</item>
+        <item name="android:activityOpenExitAnimation">@anim/sale_hacia_arriba</item>
+        <item name="android:activityCloseEnterAnimation">@anim/entra_hacia_abajo</item>
+        <item name="android:activityCloseExitAnimation">@anim/sale_hacia_abajo</item>
+    </style>
+
+    <!-- Casga el estilo DeDerechaHaciaIzquierda
+    Se debe tener como Theme definido en el manifest de la actividad a abrir y heredar de un estilo que herede de Teme.AppCompat o de AppTheme-->
+    <style name="AnimacionDerechaIzquierda" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/DeDerechaHaciaIzquierda</item>
+    </style>
+
+    <!-- Carga las animaciones para abrir hacia la izquierda una activity-->
+    <style name="DeDerechaHaciaIzquierda" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/entra_hacia_derecha</item>
+        <item name="android:activityOpenExitAnimation">@anim/sale_hacia_derecha</item>
+        <item name="android:activityCloseEnterAnimation">@anim/entra_hacia_izquierda</item>
+        <item name="android:activityCloseExitAnimation">@anim/sale_hacia_izquierda</item>
+    </style>
+
+    <!-- Casga el estilo DeDerechaHaciaIzquierda
+    Se debe tener como Theme definido en el manifest de la actividad a abrir y heredar de un estilo que herede de Teme.AppCompat o de AppTheme-->
+    <style name="AnimacionIzquierdaDerecha" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/DeIzquierdaHaciaDerecha</item>
+    </style>
+
+    <!-- Carga las animaciones para abrir hacia la izquierda una activity-->
+    <style name="DeIzquierdaHaciaDerecha" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/entra_hacia_izquierda</item>
+        <item name="android:activityOpenExitAnimation">@anim/sale_hacia_izquierda</item>
+        <item name="android:activityCloseEnterAnimation">@anim/entra_hacia_derecha</item>
+        <item name="android:activityCloseExitAnimation">@anim/sale_hacia_derecha</item>
     </style>
 
 </resources>

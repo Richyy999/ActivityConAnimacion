@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ActivityIzquierda"
+            android:label="@string/activity_izquierda"
+            android:theme="@style/AnimacionIzquierdaDerecha" />
+        <activity
+            android:name=".ActivityDerecha"
+            android:label="@string/activity_derecha"
+            android:theme="@style/AnimacionDerechaIzquierda" />
+        <activity
             android:name=".ActivityAbajo"
             android:label="@string/activity_abajo"
             android:theme="@style/AnimacionAbajoArriba" />

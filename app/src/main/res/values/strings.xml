@@ -2,4 +2,7 @@
     <string name="app_name">ActivityConAnimacion</string>
     <string name="activity_abajo">Activity Abajo</string>
     <string name="activity_arriba">Activity Arriba</string>
+    <string name="activity_derecha">Activity Derecha</string>
+    <string name="activity_izquierda">Activity Izquierda</string>
+    <string name="desc_image_button">Flecha para indicar hacia donde se desplegará el nuevo activity</string>
 </resources>

@@ -5,15 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 /**
- * Activity que se despliega desde abajo hasta arriba
- *
- * @author Ricardo Bordería Pi
+ * Activity que se despliega desde la izquierda hasta la derecha
  */
-public class ActivityAbajo extends AppCompatActivity {
+public class ActivityIzquierda extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_abajo);
+        setContentView(R.layout.activity_izquierda);
     }
 }
